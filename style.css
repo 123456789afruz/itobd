@@ -16,9 +16,27 @@
 
 }
 
+.section-title {
+
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+
+}
+
+.small-icon {
+    rotate: -90deg;
+    height: 80px;
+    display: block;
+    position: relative;
+    left: -90px;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     background-color: #0d0c09;
+    color: #FFFFFF;
 }
 
 .nav {
@@ -137,11 +155,7 @@ body {
 }
 
 .stand__icon {
-    rotate: -90deg;
-    width: 80px;
-    height: 80px;
     margin: 0 auto;
-    display: block;
     margin-top: 150px;
 }
 
@@ -200,4 +214,84 @@ body {
     background-color: #60AC76;
     border-radius: 8px;
 
+}
+
+.mobile {}
+
+
+.mobile__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.mobile__content {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .section-title {
+        text-align-last: left;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2;
+
+    }
+
+    ul {
+
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.1;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+            &::before {
+                content: '';
+                width: 18px;
+                height: 18px;
+                background-color: #04EB84;
+                border-radius: 50%;
+                display: inline-block;
+                position: relative;
+                top: 3px;
+                margin-right: 5px;
+                clip-path: polygon(10% 16%, 27% 14%, 38% 2%, 49% 7%, 64% 3%, 71% 16%, 88% 20%, 89% 34%, 99% 47%, 90% 59%, 91% 75%, 74% 79%, 64% 91%, 51% 84%, 36% 90%, 26% 78%, 9% 75%, 12% 59%, 0 45%, 10% 33%);
+                background-image: url(./img/check.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+        }
+    }
+}
+
+.mobile__icon {}
+
+.small-icon {}
+
+.section-title {}
+
+.charger {}
+
+.mobile__img {
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 80%;
+        background: red;
+        /* height: 20px; */
+        display: block;
+        position: absolute;
+        bottom: 40px;
+        right: 0;
+        z-index: -1;
+        box-shadow: 1px 1px 60px 10px rgb(88, 88, 88);
+    }
 }
